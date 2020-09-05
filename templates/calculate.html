@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+
+
+<html>
+    <form method="POST" action='/calculate'>
+        <label for='number'>Enter Number</label>
+        <input type='text' name='number' placeholder="Enter Number"><br>
+        <br>
+        <input type='submit'>
+    </form> 
+    <h2>{{ solution }}</h2>
+    <h2>{{ errors }}</h2>
+
+
+</html>
+
+
+{% endblock %}

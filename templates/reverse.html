@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<html>
+    <form method="POST" action="/reverse">
+        <label for='word_input'>Enter Input</label>
+        <input type='text' name='word_input' placeholder="Enter Name"><br>
+        <br>
+        <input type="submit">
+    </form>
+    <h2>{{ solution }}</h2>
+    <h2>{{ error_msg }}</h2>
+</html>
+
+{% endblock %}
+
+
